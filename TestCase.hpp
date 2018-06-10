@@ -54,7 +54,7 @@ public:
         }
         else{
             std::stringstream s1;
-            s1 << test_name << ": Failure in test #" << (num_passed+num_failed+1) << ": " << " Function should return "<< b << " but returned " << f(a) << "!";
+            s1 << test_name << ": Failure in test #" << (num_passed+num_failed+1) << ": " << "Function should return "<< b << " but returned " << f(a) << "!";
             failedTest(s1.str());
         }
 
@@ -71,7 +71,7 @@ public:
         }
         else{
             std::stringstream s1;
-            s1 << test_name << ": Failure in test #" << (num_passed+num_failed+1) << ": " << " string value should be "<< b << " but returned " << s.str() << "!";
+            s1 << test_name << ": Failure in test #" << (num_passed+num_failed+1) << ": " << "string value should be "<< b << " but returned " << s.str() << "!";
             failedTest(s1.str());
         }
 
