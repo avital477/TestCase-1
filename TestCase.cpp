@@ -22,6 +22,6 @@ void TestCase::passedTest(){
 void TestCase::print(){
 	std::stringstream s1;
 
-	s1 <<  "Test int operators: " << num_failed << " failed, " << num_passed << " passed, " << num_failed + num_passed << " total." << std::endl << "---" << std::endl;
+	s1 << test_name << ": " << num_failed << " failed, " << num_passed << " passed, " << num_failed + num_passed << " total." << std::endl << "---" << std::endl;
     test_err << s1.str();
 }
