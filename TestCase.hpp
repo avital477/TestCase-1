@@ -41,7 +41,10 @@ public:
 
     template<typename T> TestCase& check_different(T a, T b){
         if (a==b){
-            failedTest("the objects are equal");
+            std::stringstream s1;
+            s1 << test_name << ": Failure in test #" << num_passed+num_failed+1 << ": " << b << " should not equal " << a << "!";
+            failedTest(s1.str());
+//             failedTest("the objects are equal");
         }else{
             passedTest();
         }
